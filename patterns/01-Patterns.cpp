@@ -243,13 +243,136 @@ int main()
 
 
 
+    
+    // A
+    // B C
+    // C D E
+    // D E F G    
+    // int num = 0;
+    // for (int i = 1; i <= 4; i++){
+    //     num = i-1;
+    //     for (int j = 0; j < i; j++){
+    //         char ch = 'A' + num; 
+    //         cout << ch << " ";
+    //         num++;
+    //     }
+    //     cout << endl;
+    // }
+    
 
 
 
 
 
+
+
+    // D
+    // C D
+    // B C D 
+    // A B C D
+    // int num = 4;
+    // for (int i = 0; i < num; i++){
+    //     for (int j = 0;j <= i; j++){
+    //         char ch = 'A' + num - i + j -1;
+    //         cout << ch << " ";
+    //     }
+    //     cout<<endl;
+    // }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // A B C
+    // B C D
+    // C D E
+    // for (int i = 0; i < 3; i++){
+    //     for(int j = 0;j < 3; j++){
+    //         char ch = 'A' + i + j;
+    //         cout << ch << " ";
+    //     }
+    //     cout<<endl;
+    // }
+
+
+
+
+
+
+
+
+    //       *
+    //     * *
+    //   * * * 
+    // * * * *
+    // int num = 4;
+    // for (int i = 0; i < num; i++) {
+    //     for (int j = 0; j < num; j++) {
+    //         if (j < num - i - 1)
+    //             cout << "  "; 
+    //         else
+    //             cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+    
+
+
+
+
+
+
+    // * * * *
+    // * * *
+    // * *
+    // *
+    // int num = 4;
+    // for (int i = 0; i < num; i++){
+    //     for (int j = 0; j < num-i; j++){
+    //             cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+    
+
+
+
+
+
+
+
+
+
+
+
+    // * * * *
+    //   * * *
+    //     * *
+    //       *
+    int num = 4;
+    for (int i = 0; i < num; i++) {
+        for (int j = 0; j < i; j++) {
+            cout << "  ";  
+        }
+        for (int j = 0; j < num - i; j++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
 
 
 
     return 0;
+ 
+ 
 }

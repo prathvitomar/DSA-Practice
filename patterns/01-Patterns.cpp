@@ -296,13 +296,16 @@ int main()
     // A B C
     // B C D
     // C D E
-    // for (int i = 0; i < 3; i++){
-    //     for(int j = 0;j < 3; j++){
-    //         char ch = 'A' + i + j;
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     for (int j = 0; j < 3; j++)
+    //     {
+    //         char ch = 'A' + j + i;
     //         cout << ch << " ";
     //     }
-    //     cout<<endl;
+    //     cout << endl;
     // }
+    
 
 
 
@@ -315,16 +318,21 @@ int main()
     //     * *
     //   * * * 
     // * * * *
-    // int num = 4;
-    // for (int i = 0; i < num; i++) {
-    //     for (int j = 0; j < num; j++) {
-    //         if (j < num - i - 1)
-    //             cout << "  "; 
-    //         else
-    //             cout << "* ";
+    // for (int i = 0; i < 4; i++)
+    // {
+    //     for (int j = 1; j <= 4; j++)
+    //     {
+    //         if (j < 4 - i)
+    //         {
+    //             cout << " ";
+    //         }
+    //         else{
+    //             cout << "*";
+    //         }
     //     }
     //     cout << endl;
     // }
+    
     
 
 
@@ -338,8 +346,15 @@ int main()
     // *
     // int num = 4;
     // for (int i = 0; i < num; i++){
-    //     for (int j = 0; j < num-i; j++){
-    //             cout << "* ";
+    //     for (int j = 0; j < num; j++)
+    //     {
+    //         if (j < num -i)
+    //         {
+    //             cout << "*";
+    //         }
+    //         else{
+    //             cout << " ";
+    //         }
     //     }
     //     cout << endl;
     // }
@@ -359,16 +374,52 @@ int main()
     //   * * *
     //     * *
     //       *
-    int num = 4;
-    for (int i = 0; i < num; i++) {
-        for (int j = 0; j < i; j++) {
-            cout << "  ";  
-        }
-        for (int j = 0; j < num - i; j++) {
-            cout << "* ";
+    // int num = 4;
+    // for (int i = 1; i <= num; i++){
+    //     for (int j = 1; j <= num; j++){
+    //         if(j < i){
+    //             cout << " ";
+    //         }
+    //         else{
+    //             cout << "*";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //      1
+    //    1 2 1
+    //  1 2 3 2 1
+    //1 2 3 4 3 2 1
+    int n = 4; 
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 1; j <= 2 * n - 1; ++j) {
+            if (j <= n - i) {
+                cout << "  ";
+            } else if (j <= n) {
+                cout << j - (n - i) << " ";
+            } else if (j < n + i) {
+                cout << 2 * n - j << " ";
+            }
         }
         cout << endl;
     }
+
+    
+
+
 
 
 
